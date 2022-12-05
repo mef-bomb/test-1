@@ -12,7 +12,6 @@ export const Login: React.FC<LoginPageProps> = ({ onLogin }) => {
   const [email, setEmail] = useState('')
   const [pwd, setPwd] = useState('')
   const [remember, setRemember] = useState(false)
-  const [loggedIn, SetLoggedIn] = useState(false)
 
   const handleEmailChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => setEmail(event.target.value), []
